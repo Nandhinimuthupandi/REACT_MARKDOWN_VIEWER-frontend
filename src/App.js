@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/markdown/markdown-list')
+      .get('https://mymarkdownapp.onrender.com/api/markdown/markdown-list')
       .then((response) => {
         setMarkdownList(response.data);
       })

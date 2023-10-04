@@ -18,7 +18,7 @@ function Login({ setIsLoggedIn }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/login', formData);
+      const response = await axios.post('https://mymarkdownapp.onrender.com/api/auth/login', formData);
 
       if (response.data.message === 'Login successful') {
         setLoginMessage('Login successful');

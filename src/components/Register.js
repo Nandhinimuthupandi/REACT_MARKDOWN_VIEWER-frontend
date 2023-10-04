@@ -27,7 +27,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/register', formData);
+      const response = await axios.post('https://mymarkdownapp.onrender.com/api/auth/register', formData);
       setRegistrationStatus({ message: response.data.message, isError: false });
 
       // Clear the form data after successful registration
